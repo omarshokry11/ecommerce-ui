@@ -1,13 +1,13 @@
 import React from "react";
 
-import MainNAv from './Layout/components/MainNav.js';
+import MaintopNAv from './Layout/components/MaintopNav.js';
 
 
 
 class App extends React.Component {
   render() {
     return (
-      <MainNAv />
+      <MaintopNAv />
     );
   }
 }

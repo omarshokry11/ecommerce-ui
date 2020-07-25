@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const MainNav = () => {
+const MaintopNav = () => {
     return (
         <div>
             Hello
@@ -10,4 +10,4 @@ const MainNav = () => {
 }
 
 
-export default MainNav;
+export default MaintopNav;
