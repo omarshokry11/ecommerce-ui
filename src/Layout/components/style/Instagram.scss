@@ -1,0 +1,104 @@
+@import "../../variables";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.instagram{
+
+    margin-bottom: 40px;
+    
+    .title{
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-instagram{
+
+        margin-bottom: 50px;
+
+        .inner-instagram{
+
+            &:hover{
+
+                cursor: pointer;
+            }
+
+            &:hover .det{
+
+                display: block;
+            }
+            
+            position: relative;
+            width: 303.8px;            
+            display: inline-block;
+            height: 100%;
+
+            img{ width: 100%; } }
+
+        .det{
+            display: none;
+            width: 100%;
+            height: 228px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.863);
+
+            p{
+                position: absolute;
+                bottom: 20px;padding: 20px;
+                color: $Color5;
+                font-size: 13px;
+            }
+
+            h6{
+                color: $Color5;
+                position: absolute;
+                bottom: 10px;
+                font-size: 13px;
+                left: 20px;
+            }
+        }
+    }
+
+    .container-fluid{
+
+        div{
+
+            .bo2{
+               border-left: 1px solid #d9d9d9;
+               border-right: 1px solid #d9d9d9;
+            }
+            
+            h4{
+                font-size: 18px;
+                color: #555555;
+                line-height: 1.5;
+                font-weight: 300;
+            }
+
+            a{
+                color: $Color1;
+                text-decoration: none;
+                transition: .6s;
+                font-size: 13px;
+                line-height: 1.8;
+
+                &:hover{
+                    color: $Color2;
+                }
+            }
+
+            p{
+                color: $Color1;
+                text-decoration: none;
+                transition: .6s;
+                font-size: 13px;
+                line-height: 1.8;
+            }
+        }
+    }
+}

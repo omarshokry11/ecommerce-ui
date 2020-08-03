@@ -1,0 +1,121 @@
+@import "../../variables";
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.banner{
+    margin-bottom: 100px;
+
+    img{
+        width: 100%;
+        margin: 15px;
+    }
+
+    a{
+        color: $Color4;
+        background-color: $Color5;
+        width: 50%;
+        padding: 10px 15px;
+        text-align: center;
+        transition: all .6s;
+        font-size: 18px;
+        font-weight: 200;
+
+        &:hover{
+            background-color: $Color2;
+            text-decoration: none;
+            color: $Color5;
+        }
+    }
+
+    .dresses{
+        position: relative;
+
+        a{
+            position: absolute;
+            bottom: 50px;
+            left: 30%;
+        }
+    }
+
+    .glasses{
+        position: relative;
+
+        a{
+            position: absolute;
+            bottom: 15%;
+            left: 30%;
+        }
+    }
+
+    .watch{
+        position: relative;
+
+        a{
+            position: absolute;
+            bottom: 15%;
+            left: 30%;
+        }
+    }
+
+    .footer{
+        position: relative;
+
+        a{
+            position: absolute;
+            bottom: 10%;
+            left: 30%;
+        }
+    }
+
+    .bag{
+        position: relative;
+
+        a{
+            position: absolute;
+            bottom: 10%;
+            left: 30%;
+        }
+    }
+
+    .signup{
+        background-color: rgba(238, 238, 238, 0.568);
+        position: relative;
+        height: 330px;
+        left: 15px;
+        top: 8px;
+
+        h4{
+            position: absolute;
+            top: 40px;
+            left: 15%;
+            width: 70%;
+            font-weight: 498;
+            font-size: 30px;
+            line-height: 1.1;
+        }
+
+        p{
+            position: absolute;
+            top: 37%;
+            left: 15%;
+            font-size: 15px;
+            line-height: 1.7;
+            color: $Color1;
+            width: 235px;
+        }
+
+        a{
+            position: absolute;
+            bottom: 15%;
+            left: 25%;
+            border-radius: 23px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}

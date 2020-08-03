@@ -1,0 +1,101 @@
+@import "../../variables.scss";
+
+/*Main-Navbar*/
+
+.nav
+{
+    img
+    {
+        padding: 20px 15px;
+    }
+
+    a
+    {
+        color: $Color4;
+
+        &:hover
+        {
+            color: $Color4;
+        }
+    }
+
+    .home
+    {
+        position: relative;
+
+        ul
+        {
+            height: 130px;
+            width: 170px;
+            background-color: $Color4;
+            position: absolute;
+            display: none;
+
+            li
+            {
+                padding: 10px 15px;
+
+                a
+                {
+                    color: $Color3;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 1.7;
+
+                    &:hover
+                    {
+                        color: $Color2;
+                        text-decoration: none;
+                        transition: all .4s;
+                    }
+                }
+            }
+        }
+
+        &:hover ul
+        {
+            display: block;
+        }
+    }
+
+    .sale
+    {
+        color: $Color2;
+
+        &:hover
+        {
+            color: $Color2;
+        }
+    }
+
+    span
+    {
+        border-right: 1px solid $Color3;
+    }
+
+    .user-section
+    {
+
+        .cart-btn {
+            color: #000000;
+
+            img
+            {
+                width: 50px;
+            }
+
+            .count
+            {
+                position: absolute;
+                background-color: #000;
+                color: #FFF;
+                border-radius: 50%;
+                height: 17px;
+                width: 17px;
+                right: 22px;
+                top: 28px;
+                font-size: .65rem;
+            }
+        }
+    }
+}

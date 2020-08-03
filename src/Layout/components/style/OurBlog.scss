@@ -1,0 +1,62 @@
+@import "../../variables";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.blog{margin-bottom: 100px;}
+
+.title{
+
+    margin-bottom: 50px;
+    
+    h3{
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+}
+
+.inner-blog{
+
+    img{
+        width: 100%;
+        margin-bottom: 20px;
+        transition: all .6s;
+        cursor: pointer;
+    }
+
+    a{
+        color: $Color4;
+        transition: all .6s;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        font-weight: 650;
+        color: $Color1;
+
+        &:hover{
+            color: $Color2;
+            text-decoration: none;
+        }
+    }
+
+    h6{
+        margin: 20px 0;
+
+        span{
+            font-size: 13px;
+            line-height: 1.8;
+            color: $Color1;
+        }
+    }
+
+    p{
+        font-size: 13px;
+        color: $Color1;
+        line-height: 1.8;
+        font-weight: 650;
+    }
+}

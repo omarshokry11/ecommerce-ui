@@ -1,0 +1,158 @@
+@import "../../variables";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.alice-carousel__stage-item *{
+    width: 95%;
+    height: 300px;
+}
+
+.alice-carousel__play-btn-item{
+    display: none;
+}
+
+.alice-carousel__play-btn-wrapper{
+    display: none;
+}
+
+.alice-carousel__dots-item:hover, .alice-carousel__dots-item.__active{
+    display: none;
+}
+
+.alice-carousel__prev-btn [data-area]::after, .alice-carousel__next-btn{
+    display: none;
+}
+
+.alice-carousel__prev-btn, .alice-carousel__next-btn{
+    display: none;
+}
+
+.alice-carousel__dots{
+    display: none;
+}
+
+.main-alice{
+
+    margin-bottom: 70px;
+
+    .title-alice
+    {
+        margin-bottom: 50px;
+
+        h3
+        {
+            font-size: 30px;
+            line-height: 1.2;
+            font-weight: 600;
+        }
+    }
+
+}
+
+.shop
+{
+    background-color: #EEE;
+    margin-bottom: 100px;
+
+    img
+    {
+        width: 100%;
+        height: 550px;
+        padding: 60px 0;
+    }
+
+    .ab-t-l{
+        position: relative;
+
+        .main-details{
+            position: absolute;
+            bottom: 35%;
+            left: 25%;
+
+            p{
+                font-size: 30px;
+                line-height: 1.2;
+                letter-spacing: 2px;
+                color: $Color5;
+                font-weight: 600;
+            }
+
+            h3{
+                font-size: 50px;
+                line-height: 1.2;
+                letter-spacing: 3px;
+                color: $Color5;
+            }
+
+            a{
+                font-size: 15px;
+                letter-spacing: 2px;
+                color: $Color5;
+            }
+        }
+
+        .inner-details{
+            position: absolute;
+            bottom: 15%;
+            left: 25%;
+
+            a{
+                color: $Color4;
+                text-decoration: none;
+                transition: .5s;
+                font-size: 15px;
+                line-height: 1.5;
+                line-height: 1.5;
+                &:hover{
+                    color: $Color2;
+                }
+            }
+
+            p{
+                s
+                {
+                    margin-right: 10px;
+                    font-size: 17px;
+                    color: #555555;
+                }
+
+                span{
+                    color: $Color2;
+                    font-size: 18px;
+                }
+            }
+
+            .timer{
+
+                margin-top: 30px;
+                width: 100%;
+
+               p{
+                   display: inline-block;
+                   border: 1px solid #dbdbdb;
+                   margin-right: 10px;
+                   font-size: 18px;
+                   line-height: 1;
+                   color: #555555;
+                   border-radius: 2px;
+                   width: 60px;
+                   height: 60px;
+                   padding: 10px;
+
+                   span{
+                       display: block;
+                       color: #999999;
+                       font-size: 15px;
+                       line-height: 1;
+                   }
+               }
+            }
+
+        }
+    }
+}

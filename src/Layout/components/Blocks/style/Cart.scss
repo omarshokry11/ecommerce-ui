@@ -1,0 +1,121 @@
+@import "../../../variables";
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.cart
+{
+    direction: rtl;
+    position: absolute;
+    top: 14.5%;
+    display: none;
+
+    .main-cart
+    {
+        position: relative;
+        width: 400px;
+
+        div
+        {
+            display: inline-block;
+            float: left;
+            padding: 15px;
+
+            .cover
+            {
+                width: 90px;
+                height: 90px;
+                cursor: pointer;
+                margin-right: 20px;
+
+                img
+                {
+                    width: 90px;
+                    height: 90px;
+                }
+
+                &:hover span
+                {
+                    display: block;
+                }
+
+                span
+                {
+                    color: $Color5;
+                    font-size: 20px;
+                    position: absolute;
+                    top: 60px;
+                    left: 40px;
+                    display: none;
+                }
+            }
+        }
+        
+        h6
+        {
+            width: 290px;
+            font-size: 15px;
+            line-height: 1.3;
+            color: #555555;
+            margin-bottom: 12px;
+            font-weight: 340;
+            margin-top: 20px;
+            cursor: pointer;
+
+            &:hover
+            {
+                color: $Color2;
+                transition: all .5s;
+            }
+        }
+
+        p
+        {
+            font-size: 12px;
+            line-height: 1.5;
+            color: $Color1;
+        }
+
+        .total
+        {
+            text-align: right;
+
+            h6
+            {
+                margin: 0;
+                font-size: 1rem;
+                color: $Color1;
+                cursor: s-resize;
+
+                &:hover
+                {
+                    color: $Color1;
+                }
+            }
+        }
+
+        .link
+        {
+            a
+            {
+                margin-right: 20px;
+                background-color: #000;
+                color: $Color5;
+                padding: 10px 25px;
+                border-radius: 20px;
+                width: 200px;
+                text-decoration: none;
+
+                &:hover
+                {
+                    background-color: $Color2;
+                    transition: all .6s;
+                }
+            }
+        }
+    }
+}
