@@ -67,11 +67,11 @@ const Footer = () => {
 
                     <div className="col-12 text-center paying">
                         <div className="link">
-                            <Image src="paypal.jpg" />
-                            <Image src="visa.jpg" />
-                            <Image src="paypal.jpg" />
-                            <Image src="visa.jpg" />
-                            <Image src="paypal.jpg" />
+                            <Image src="footer/paypal.png" />
+                            <Image src="footer/visa.png" />
+                            <Image src="footer/mastercard.png" />
+                            <Image src="footer/express.png"/>
+                            <Image src="footer/discover.png" />
                         </div>
                         <p>Copyright © 2017 Colorlib. All rights reserved.</p>
                     </div>

@@ -1,121 +1,114 @@
-@import "../../variables";
+@import"../../variables";
 
-*
-{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-.banner{
-    margin-bottom: 100px;
-
-    img{
-        width: 100%;
-        margin: 15px;
-    }
-
-    a{
-        color: $Color4;
-        background-color: $Color5;
-        width: 50%;
-        padding: 10px 15px;
-        text-align: center;
-        transition: all .6s;
-        font-size: 18px;
-        font-weight: 200;
-
-        &:hover{
+.cat-grid {
+    padding: 40px 0;
+    .container {
+      max-width: 1200px;
+      @media (min-width: 992px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(autofill, 5vw);
+        grid-gap: 30px;
+        .box1,
+        .box3 {
+          grid-row: 1/6;
+        }
+        .box2 {
+          grid-row: 1/4;
+        }
+        .box4,
+        .box6 {
+          grid-row: 6/10;
+        }
+        .box5 {
+          grid-row: 4/10;
+        }
+      }
+  
+      .category {
+        position: relative;
+        overflow: hidden;
+        @media (max-width: 991px) {
+          margin-bottom: 30px;
+        }
+        @media (min-width: 576px) and (max-width: 767px) {
+          max-width: 83.33333%;
+          margin-right: auto;
+          margin-left: auto;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+          max-width: 66.66667%;
+          margin-right: auto;
+          margin-left: auto;
+        }
+        &:hover {
+          img {
+            transform: scale(1.1);
+          }
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          transition: all 0.6s;
+        }
+        a {
+          position: absolute;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 12px 54px;
+          font-size: 17px;
+          text-transform: uppercase;
+          background-color: rgba(255, 255, 255, 0.959);
+          box-shadow: 0px 0px 2px rgba(207, 207, 207, 0.856);
+          color: #333333;
+          text-decoration: none;
+          transition: all 0.5s;
+          vertical-align: middle;
+          &:hover {
             background-color: $Color2;
-            text-decoration: none;
             color: $Color5;
+          }
         }
-    }
-
-    .dresses{
+      }
+      .category-offer {
         position: relative;
-
-        a{
-            position: absolute;
-            bottom: 50px;
-            left: 30%;
-        }
-    }
-
-    .glasses{
-        position: relative;
-
-        a{
-            position: absolute;
-            bottom: 15%;
-            left: 30%;
-        }
-    }
-
-    .watch{
-        position: relative;
-
-        a{
-            position: absolute;
-            bottom: 15%;
-            left: 30%;
-        }
-    }
-
-    .footer{
-        position: relative;
-
-        a{
-            position: absolute;
-            bottom: 10%;
-            left: 30%;
-        }
-    }
-
-    .bag{
-        position: relative;
-
-        a{
-            position: absolute;
-            bottom: 10%;
-            left: 30%;
-        }
-    }
-
-    .signup{
-        background-color: rgba(238, 238, 238, 0.568);
-        position: relative;
-        height: 330px;
-        left: 15px;
-        top: 8px;
-
-        h4{
-            position: absolute;
-            top: 40px;
-            left: 15%;
-            width: 70%;
-            font-weight: 498;
-            font-size: 30px;
-            line-height: 1.1;
-        }
-
-        p{
-            position: absolute;
-            top: 37%;
-            left: 15%;
-            font-size: 15px;
-            line-height: 1.7;
-            color: $Color1;
-            width: 235px;
-        }
-
-        a{
-            position: absolute;
-            bottom: 15%;
-            left: 25%;
-            border-radius: 23px;
-            font-size: 16px;
+        .offer {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: block;
+          text-align: center;
+          width: auto;
+          h2 {
+            font-size: 22px;
             font-weight: 400;
+            font-family: sans-serif;
+            @media (max-width: 991px) {
+              font-size: 36px;
+            }
+          }
+          p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: rgb(153, 153, 153);
+          }
+          a {
+            text-decoration: none;
+            color: rgb(221, 221, 221);
+            background: $Color4;
+            font-size: 16px;
+            padding: 10px 40px;
+            border-radius: 25px;
+            text-transform: uppercase;
+            transition: all .6s;
+
+            &:hover{
+              background-color: $Color2;
+            }
+          }
         }
+      }
     }
-}
+  }

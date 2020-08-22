@@ -4,9 +4,11 @@
 
 .nav
 {
-    img
+    height: 80px;
+
+    .logo
     {
-        padding: 20px 15px;
+       margin-left: 50px;
     }
 
     a
@@ -76,12 +78,20 @@
     .user-section
     {
 
+        position: relative;
+        right: 60px;
+
+        .user-btn {
+            position: absolute;
+            right: 1px;
+          }
+
         .cart-btn {
             color: #000000;
 
             img
             {
-                width: 50px;
+                margin: 0 20px;
             }
 
             .count
@@ -92,8 +102,8 @@
                 border-radius: 50%;
                 height: 17px;
                 width: 17px;
-                right: 22px;
-                top: 28px;
+                right: 10px;
+                top: 0;
                 font-size: .65rem;
             }
         }

@@ -54,13 +54,15 @@
     }
 
     input{
-        border: 0;
+        border: none;
+        outline: none;
         background-color: #f0f0f0;
         border-bottom: 1px solid #7a7a7a57;
         padding: 7px 1px;
         font-size: 13px;
         margin-bottom: 20px;
         width: 100%;
+        transition: all .6s;
 
         &:focus{
             border: none;
@@ -75,7 +77,9 @@
         border-radius: 25px;
         transition: .6s;
         font-weight: 400;
-
+        display: block;
+        position: absolute;
+        top: 160px;
         &:hover{
             background-color: $Color2;
         }

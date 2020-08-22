@@ -1,94 +1,132 @@
-import React from 'react';
-import { Image} from 'react-bootstrap';
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
+import React from "react";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+import Container from "react-bootstrap/Container";
+import FavoriteProduct, { title } from 'sweetalert';
+
+import "../components/Blocks/FavoriteProduct";
 
 import "./style/CarouselAlice.scss";
- 
-class Gallery extends React.Component {
-  state = {
-    galleryItems: [
-        <Image src="blog.jpg" />,
-        <Image src="blog.jpg" />,
-        <Image src="blog.jpg" />,
-        <Image src="blog.jpg" />
-    ].map((i) => <h2 key={i}>{i}</h2>),
-  }
- 
-  responsive = {
-    0: { items: 2 },
-    1024: { items: 4 },
-  }
- 
-  onSlideChange(e) {
-    console.debug('Item`s position during a change: ', e.item)
-    console.debug('Slide`s position during a change: ', e.slide)
-  }
- 
-  onSlideChanged(e) {
-    console.debug('Item`s position after changes: ', e.item)
-    console.debug('Slide`s position after changes: ', e.slide)
-  }
- 
-  render() {
-    return (
-        <div>
-            <div className="container main-alice">
-                <div className="row">
-                    <div className="col-12 text-center title-alice">
-                        <h3>FEATURED PRODUCTS</h3>
-                    </div>
-                    <div className="col-12">
-                    <AliceCarousel
-                        items={this.state.galleryItems}
-                        responsive={this.responsive}
-                        autoPlayInterval={1000}
-                        autoPlayDirection="ltr"
-                        autoPlay={true}
-                        fadeOutAnimation={true}
-                        mouseTrackingEnabled={true}
-                        playButtonEnabled={true}
-                        disableAutoPlayOnAction={true}
-                        onSlideChange={this.onSlideChange}
-                        onSlideChanged={this.onSlideChanged}
-                    />
-                    </div>
-                </div>
-            </div>
 
-            <div className="shop">
-                <div className="container text-center">
-                    <div className="row">
-                        <div className="col-md-6 col-12 ab-t-l">
-                            <Image src="blog.jpg" />
-                            <div className="main-details">
-                                <p>The Beauty</p>
-                                <h3>LOOKBOOK</h3>
-                                <a href=" ">VIEW COLLECTION</a>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-12 ab-t-l">
-                            <Image src="banner-05.jpg" />
-                            <div className="inner-details">
-                                <a href=" ">Gafas sol Hawkers one</a>
-                                <p>
-                                    <s className="span-one">$29.50</s>
-                                    <span className="span-two">$15.90</span>
-                                </p>
-                                <div className="timer">
-                                    <p>69 <span> days </span> </p>
-                                    <p>11 <span> hrs </span> </p>
-                                    <p>44 <span> mins </span> </p>
-                                    <p>11 <span> sec </span> </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+class ProductsCarousel extends React.Component {
+  state = { galleryItems: [4], currentIndex: 0 };
+
+  responsive = {
+    0: { items: 1 },
+    576: { items: 2 },
+    768: { items: 3 },
+    1024: { items: 4 },
+  };
+
+  slideTo = (i) => this.setState({ currentIndex: i });
+
+  onSlideChanged = (e) => this.setState({ currentIndex: e.item });
+
+  slideNext = () =>
+    this.setState({ currentIndex: this.state.currentIndex + 1 });
+
+  slidePrev = () =>
+    this.setState({ currentIndex: this.state.currentIndex - 1 });
+
+  render() {
+    const { galleryItems, currentIndex } = this.state;
+    return (
+      <div className="products-carousel-section">
+        <div className="section-header">
+          <h2>Featured Products</h2>
         </div>
-    )
+        <Container className="p-0">
+          <AliceCarousel
+            items={galleryItems}
+            responsive={this.responsive}
+            autoPlayInterval={1000}
+            fadeOutAnimation={false}
+            dotsDisabled={true}
+            buttonsDisabled={true}
+            touchTrackingEnabled={true}
+            mouseTrackingEnabled={true}
+            slideToIndex={currentIndex}
+            onSlideChanged={this.onSlideChanged}
+          >
+            <div className="item">
+              <div className="item-img new-product">
+                <div className="item-fav-icon">
+                  <FavoriteProduct title={title} />
+                </div>
+                <img className="w-100" src="/alice-carousel/item-02.jpg" alt="" />
+                <a href="/" className="add-btn">
+                  add to cart
+                </a>
+              </div>
+              <div className="item-description">
+                <a href="/">Herschel supply co 25l</a>
+                <div>
+                  <span>$75.00</span>
+                </div>
+              </div>
+            </div>
+            <div className="item">
+              <div className="item-img sale-product">
+                <div className="item-fav-icon">
+                  <FavoriteProduct title={title} />
+                </div>
+                <img className="w-100" src="/alice-carousel/item-03.jpg" alt="" />
+                <a href="/" className="add-btn">
+                  add to cart
+                </a>
+              </div>
+              <div className="item-description">
+                <a href="/">Herschel supply co 25l</a>
+                <div>
+                  <span>$75.00</span>
+                </div>
+              </div>
+            </div>
+            <div className="item">
+              <div className="item-img">
+                <div className="item-fav-icon">
+                  <FavoriteProduct title={title} />
+                </div>
+                <img className="w-100" src="/alice-carousel/item-04.jpg" alt="" />
+                <a href="/" className="add-btn">
+                  add to cart
+                </a>
+              </div>
+              <div className="item-description">
+                <a href="/">Denim jacket blue</a>
+                <div>
+                  <span>$92.50</span>
+                </div>
+              </div>
+            </div>
+            <div className="item">
+              <div className="item-img">
+                <div className="item-fav-icon">
+                   <FavoriteProduct title={title} />
+                </div>
+                <img className="w-100" src="/alice-carousel/item-05.jpg" alt="" />
+                <a href="/" className="add-btn">
+                  add to cart
+                </a>
+              </div>
+              <div className="item-description">
+                <a href="/">Coach slim easton black</a>
+                <div>
+                  <span>$165.90</span>
+                </div>
+              </div>
+            </div>
+          </AliceCarousel>
+          <button className="prev-btn" onClick={() => this.slidePrev()}>
+            <i class="fas fa-angle-left"></i>
+          </button>
+          <button className="next-btn" onClick={() => this.slideNext()}>
+            <i class="fas fa-angle-right"></i>
+          </button>
+        </Container>
+      </div>
+    );
   }
 }
 
-export default Gallery;
+export default ProductsCarousel;

@@ -8,97 +8,131 @@
 
 .instagram{
 
-    margin-bottom: 40px;
-    
-    .title{
+    h3{
+        margin-bottom: 40px;
         width: 100%;
         text-align: center;
+        font-size: 30px;
+        line-height: 1.2;
+        color: #222222;
+        font-weight: 650;
     }
 
-    .main-instagram{
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        margin-bottom: 60px;
+    
+        .grid-item {
+            position: relative;
 
-        margin-bottom: 50px;
+            &:hover{cursor: pointer;}
 
-        .inner-instagram{
-
-            &:hover{
-
-                cursor: pointer;
-            }
-
-            &:hover .det{
-
+            &:hover .details{
                 display: block;
             }
-            
-            position: relative;
-            width: 303.8px;            
-            display: inline-block;
-            height: 100%;
 
-            img{ width: 100%; } }
+            img{
+                width: 100%;
+            }
 
-        .det{
-            display: none;
-            width: 100%;
-            height: 228px;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.863);
-
-            p{
+            .details{
                 position: absolute;
-                bottom: 20px;padding: 20px;
-                color: $Color5;
-                font-size: 13px;
-            }
+                bottom: 0;
+                background-color: #000;
+                opacity: 1;
+                height: 100%;
+                width: 100%;
+                display: none;
+                animation: details .8s;
 
-            h6{
-                color: $Color5;
-                position: absolute;
-                bottom: 10px;
-                font-size: 13px;
-                left: 20px;
-            }
-        }
-    }
+                .heart{
+                    position: absolute;
+                    top: 20px;
+                    font-size: 15px;
+                    color: rgba(255, 255, 255, 0.514);
 
-    .container-fluid{
+                    i{
+                        font-size: 25px;
+                        margin-right: 10px;
+                    }
+                }
 
-        div{
+                p{
+                    position: absolute;
+                    bottom: 50px;
+                    padding: 0 40px;
+                    font-size: 15px;
+                    font-weight: 300;
+                    color: rgba(255, 255, 255, 0.836);
+                }
 
-            .bo2{
-               border-left: 1px solid #d9d9d9;
-               border-right: 1px solid #d9d9d9;
-            }
-            
-            h4{
-                font-size: 18px;
-                color: #555555;
-                line-height: 1.5;
-                font-weight: 300;
-            }
-
-            a{
-                color: $Color1;
-                text-decoration: none;
-                transition: .6s;
-                font-size: 13px;
-                line-height: 1.8;
-
-                &:hover{
-                    color: $Color2;
+                span{
+                    position: absolute;
+                    bottom: 20px;
+                    padding: 0 40px;
+                    font-size: 15px;
+                    font-weight: 300;
+                    color: rgba(255, 255, 255, 0.836);
                 }
             }
-
-            p{
-                color: $Color1;
-                text-decoration: none;
-                transition: .6s;
-                font-size: 13px;
-                line-height: 1.8;
-            }
         }
     }
+    @media screen and (max-width: 768px) {
+    
+        .grid-container{
+            grid-template-columns: auto;
+        }
+    }
+
+   .inner-instagram{
+       margin-bottom: 50px;
+        h4{
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555555;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        a{
+           color: $Color1;
+           text-decoration: none;
+           transition: all .6s;
+           font-size: 13px;
+           font-weight: 400;
+           line-height: 1.8;
+
+            &:hover{
+                color: $Color2;
+            } 
+        }
+
+        p{
+            color: $Color1;
+            text-decoration: none;
+            transition: all .6s;
+            font-size: 13px;
+            font-weight: 420;
+            line-height: 1.8;
+        }
+   }
+
+   .item{
+       border-left: 1px solid #d9d9d9;
+       border-right: 1px solid #d9d9d9;
+   }
+
+   @media screen and (max-width: 768px) {
+    .item{
+        border: none;
+        border-top: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+    }
+   }
+}
+
+@keyframes details {
+    0%{opacity: -1; transition: all .5s; top: 2%; bottom: 100%;}
+    100%{opacity: 1; transition: all .8s; top: 0; bottom: 0}
 }

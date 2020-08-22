@@ -28,6 +28,12 @@
         cursor: pointer;
     }
 
+    &:hover{
+        img{
+            transform: scale(1.1);
+        }
+    }
+
     a{
         color: $Color4;
         transition: all .6s;
@@ -45,12 +51,9 @@
 
     h6{
         margin: 20px 0;
-
-        span{
-            font-size: 13px;
-            line-height: 1.8;
-            color: $Color1;
-        }
+        font-size: 13px;
+        line-height: 1.8;
+        color: $Color1;
     }
 
     p{

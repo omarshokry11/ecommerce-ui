@@ -5,6 +5,7 @@ import MainNav from './Layout/components/MainNav.js';
 import MainCarousel from './Layout/components/MainCarousel.js';
 import Banner from './Layout/components/Banner.js';
 import CarouselAlice from './Layout/components/CarouselAlice.js';
+import Offers from './Layout/components/Offers.js';
 import OurBlog from './Layout/components/OurBlog.js';
 import Instagram from './Layout/components/Instagram.js';
 import Footer from './Layout/components/Footer.js';
@@ -20,6 +21,7 @@ class App extends React.Component {
         <MainCarousel />
         <Banner />
         <CarouselAlice />
+        <Offers />
         <OurBlog />
         <Instagram />
         <Footer />

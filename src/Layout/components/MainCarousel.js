@@ -1,57 +1,78 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
-
 import "./style/Carousel.scss";
+//
+import Carousel from "react-bootstrap/Carousel";
 
-const MainCarousel = () => {
-    return (
-        <>
-            <Carousel className="carousel" fade={true} touch={true} pause={'hover'} >
-                <Carousel.Item className="main-carousel">
-                    <img
-                    className="d-block w-100"
-                    src="blog-01.jpg"
-                    alt="First slide"
-                    />
-                    <Carousel.Caption className="caption">
-                    <div className="caption-one">
-                        <p>Women Collection 2018</p>
-                        <h3>NEW ARRIVALS</h3>
-                        <a href=" ">SHOP NOW</a>
-                    </div>
-                    </Carousel.Caption>
-                </Carousel.Item>
+const OurCarousel = () => {
+  return (
+    <Carousel indicators={false} fade={true} touch={true}>
+      <Carousel.Item>
+        <div
+          style={{
+            background: `url(${"/carousel/master-slide-02.jpg"}) center / auto 100% no-repeat`,
+          }}
+          className="carousel-img"
+        ></div>
+        <div className="caption">
+          <div className="caption-content">
+            <h4 className="collection" id="collection-1">
+              Women Collection 2020
+            </h4>
+            <span className="new-arrival" id="new-arrival-1">
+              NEW ARRIVALS
+            </span>
+            <a className="caption-btn" id="caption-btn-1" href="/">
+              SHOP NOW
+            </a>
+          </div>
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div
+          style={{
+            background: `url(${"/carousel/master-slide-03.jpg"}) center / auto 100% no-repeat`,
+          }}
+          className="carousel-img"
+        ></div>
+        <div className="caption">
+          <div className="caption-content">
+            <h4 className="collection" id="collection-2">
+              Women Collection 2020
+            </h4>
+            <span className="new-arrival" id="new-arrival-2">
+              NEW ARRIVALS
+            </span>
+            <a className="caption-btn" id="caption-btn-2" href="/">
+              SHOP NOW
+            </a>
+          </div>
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div
+          style={{
+            background: `url(${"/carousel/master-slide-04.jpg"}) center / auto 100% no-repeat`,
+          }}
+          className="carousel-img"
+        ></div>
+        <div className="caption">
+          <div className="caption-content">
+            <div>
+              <h4 className="collection" id="collection-3">
+                Women Collection 2020
+              </h4>
+            </div>
+            <span className="new-arrival" id="new-arrival-3">
+              NEW ARRIVALS
+            </span>
+            <a className="caption-btn" id="caption-btn-3" href="/">
+              SHOP NOW
+            </a>
+          </div>
+        </div>
+      </Carousel.Item>
+    </Carousel>
+  );
+};
 
-                <Carousel.Item className="main-carousel">
-                    <img
-                    className="d-block w-100"
-                    src="blog.jpg"
-                    alt="Third slide"
-                    />
-
-                    <Carousel.Caption className="caption caption-tow">
-                    <p>Women Collection 2018</p>
-                    <h3>NEW ARRIVALS</h3>
-                    <a href=" ">SHOP NOW</a>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                
-                <Carousel.Item className="main-carousel">
-                    <img
-                    className="d-block w-100"
-                    src="blog-03.jpg"
-                    alt="Third slide"
-                    />
-
-                    <Carousel.Caption className="caption caption-three">
-                    <p>Women Collection 2018</p>
-                    <h3>NEW ARRIVALS</h3>
-                    <a href=" ">SHOP NOW</a>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
-        </>
-    )
-}
-
-export default MainCarousel;
+export default OurCarousel;
