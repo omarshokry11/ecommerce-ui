@@ -1,47 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Image } from "react-bootstrap";
 import "./style/Cart.scss";
+import firebase from "../../../Firebase/config.js";
 
-const Cart = () => {
+export default () => {
+    const [items, setItems] = useState([]);
+
+    useEffect(() => {
+        firebase.database().ref('cart/').once('value').then(response => {
+            let features = [];
+            response.forEach(item => {
+                features.push(item.val());
+            });
+            setItems(features);
+        }).catch((err) => console.log(err));
+    }, [items]);
+
+
+
     return (
-        <div className="container-fluid cart">
-            <div className="row">
-                <div className="main-cart">
-                    <div>
-                        <div className="cover">
-                            <Image src="blog.jpg" />
-                            <span>X</span>
-                        </div>
-                        <h6>White Shirt With Pleat Detail Back</h6>
-                        <p>1 X $19.00</p>
-                    </div>
-                    <div>
-                        <div className="cover">
-                            <Image src="blog.jpg" />
-                            <span>X</span>
-                        </div>
-                        <h6>Converse All Star Hi Black Canvas</h6>
-                        <p>1 X $19.00</p>
-                    </div>
-                    <div>
-                        <div className="cover">
-                            <Image src="blog.jpg" />
-                            <span>X</span>
-                        </div>
-                        <h6>Nixon Porter Leather Watch In Tan</h6>
-                        <p>1 X $19.00</p>
-                    </div>
-                    <div className="total">
-                        <h6>Total: $75.00</h6>
-                    </div>
-                    <div className="link">
-                        <a href=" ">VIEW CART</a>
-                        <a href=" ">CHECK OUT</a>
-                    </div>
-                </div>
+        <div className="cart">
+            <div className="main-cart">
+                {
+                    items.map(item => {
+                        return(
+                            <>
+                                <div className="product" key={item.id}>
+                                    <div className="img">
+                                        <Image src={item.product.img} />
+                                    </div>
+                                    <div className="details">
+                                        <a href=" ">{item.product.link}</a>
+                                        <p>{item.product.Price1}</p>
+                                    </div>
+                                </div>
+                            </>
+                        )
+                    })
+                }
             </div>
         </div>
     )
 }
-
-export default Cart;

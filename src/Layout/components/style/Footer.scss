@@ -1,10 +1,5 @@
 @import "../../variables";
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 
 .footer{
     background-color: #f0f0f0;
@@ -46,7 +41,6 @@
             color: $Color1;
             text-decoration: none;
             transition: all .5s;
-
             &:hover{
                 color: $Color2;
             }
@@ -63,7 +57,6 @@
         margin-bottom: 20px;
         width: 100%;
         transition: all .6s;
-
         &:focus{
             border: none;
             border-bottom: 1px solid $Color2;
@@ -71,8 +64,9 @@
     }
 
     button{
+        width: 100%;
         background-color: #000;
-        padding: 10px 40px;
+        padding: 10px;
         color: $Color5;
         border-radius: 25px;
         transition: .6s;
@@ -80,6 +74,8 @@
         display: block;
         position: absolute;
         top: 160px;
+        right: 20px;
+        left: -1px;
         &:hover{
             background-color: $Color2;
         }

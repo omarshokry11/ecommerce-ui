@@ -2,68 +2,73 @@
 
 /*Main-Navbar*/
 
+.navbar-light .navbar-toggler{
+    position: relative;
+    top: 19px;
+}
+
 .nav
 {
-    height: 80px;
-
+    height: 75px;
     .logo
     {
        margin-left: 50px;
     }
 
-    a
+    .link
     {
-        color: $Color4;
-
-        &:hover
-        {
-            color: $Color4;
-        }
+        color: $Color1;
+        transition: all .6s;
+        padding: 9px 10px;
+        font-size: 16px;
     }
 
     .home
     {
         position: relative;
-
+        top: 8px;
+        padding: 0;
+        transition: all .6s;
         ul
         {
-            height: 130px;
             width: 170px;
             background-color: $Color4;
             position: absolute;
-            display: none;
-
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(0);
+            z-index: 10;
+            transition: all .6s;
+            top: 38px;
             li
             {
-                padding: 10px 15px;
-
-                a
+                padding: 5px 10px;
+                .nav-link
                 {
                     color: $Color3;
-                    font-size: 13px;
+                    font-size: 14px;
                     font-weight: 400;
                     line-height: 1.7;
-
+                    transition: all .6s;
                     &:hover
                     {
                         color: $Color2;
                         text-decoration: none;
-                        transition: all .4s;
                     }
                 }
             }
         }
-
         &:hover ul
         {
-            display: block;
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
         }
     }
 
     .sale
     {
         color: $Color2;
-
         &:hover
         {
             color: $Color2;
@@ -77,35 +82,44 @@
 
     .user-section
     {
-
         position: relative;
-        right: 60px;
-
-        .user-btn {
-            position: absolute;
-            right: 1px;
-          }
-
+        right: 20px;
+        left: 1px;
+        .user-btn{
+            top: 10px;
+            right: 10px;
+            border-right: 1px solid #88888880;
+            padding-right: 20px;
+        }
         .cart-btn {
             color: #000000;
-
+            position: relative;
+            padding: 0 10px;
+            top: 8px;
+            right: 10px;
             img
             {
                 margin: 0 20px;
             }
-
             .count
             {
+                display: block;
                 position: absolute;
                 background-color: #000;
                 color: #FFF;
                 border-radius: 50%;
-                height: 17px;
-                width: 17px;
-                right: 10px;
+                height: 19px;
+                width: 19px;
+                left: 40px;
                 top: 0;
-                font-size: .65rem;
+                font-size: 14px;
+                font-weight: 400;
             }
         }
+    }
+}
+@media screen and (max-width: 1000px){
+    .nav{
+        height: 100%;
     }
 }

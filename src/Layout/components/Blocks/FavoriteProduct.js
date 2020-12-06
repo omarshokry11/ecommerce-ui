@@ -12,7 +12,7 @@ const FavoriteProduct = (props) => {
           if (current === "white-heart")
             return (
               setCurrent("red-heart"),
-              swal(props.title, "is added to wishlist !", "success")
+              swal("props.title", "is added to wishlist !", "success")
             );
           else if (current === "red-heart") return setCurrent("white-heart");
         }}

@@ -1,0 +1,83 @@
+@import "../../../variables.scss";
+
+
+.contact{
+    .cover{
+        background-image: url("./img/heading-pages-06.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 300px;
+        position: relative;
+        margin-bottom: 50px;
+        h2{
+            color: #FFF;
+            position: absolute;
+            left: 42%;
+            top: 33%;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 50px;
+            line-height: 1.2;
+        }
+        @media (max-width: 768px) {
+            h2{
+                font-size: 40px;
+                left: 37%;
+            }
+        }
+    }
+    .main-contact{
+        padding-top: 15px;
+        padding-bottom: 36px;
+        h4{
+            margin-bottom: 30px;
+            font-size: 25px;
+            color: #333333;
+            line-height: 1.2;
+            font-weight: 350;
+        }
+        .bo4{
+            margin-bottom: 15px;
+            input{
+                outline: none;
+                border: 1px solid #DDD;
+                width: 100%;
+                height: 50px;
+                padding: 0 15px;
+                font-size: 14px;
+                font-weight: 200;
+                color: #555555;
+                line-height: 1.8;
+            }
+            textarea{
+                outline: none;
+                border: 1px solid #DDD;
+                width: 100%;
+                height: 120px;
+                padding: 0 15px;
+                font-size: 14px;
+                font-weight: 200;
+                color: #555555;
+                line-height: 1.8;
+            }
+        }
+        .btn{
+            position: relative;
+            margin: 50px 0;
+            button{
+                font-size: 17px;
+                height: 46px;
+                width: 140px;
+                border: none;
+                background-color: #222222;
+                color: #FFF;
+                border-radius: 25px;
+                transition: all .6s;
+                &:hover{
+                    background-color: $Color2;
+                }
+            }
+        }
+    }
+}
