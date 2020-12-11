@@ -31,13 +31,17 @@ export default () => {
                                     </div>
                                     <div className="details">
                                         <a href=" ">{item.product.link}</a>
-                                        <p>{item.product.Price1}</p>
+                                        <p><span>$</span>{item.product.price1}</p>
                                     </div>
                                 </div>
                             </>
                         )
                     })
                 }
+            </div>
+            <div className="button">
+                <button className="view">VIEW CART</button>
+                <button className="check">CHECK OUT</button>
             </div>
         </div>
     )

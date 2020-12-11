@@ -15,6 +15,12 @@ export default (props) => {
     };
     const canContinue = form.full_name;
 
+    setForm({
+        full_name: "",
+        email: "",
+        password: ""
+    });
+
     const verificationEmail = () => {
         // [GET CURRENT USER]
         let user = firebase.auth().currentUser;
@@ -50,7 +56,7 @@ export default (props) => {
                 <input type="text" placeholder="Full Name" value={form.full_name} onChange={(e) => setForm({ ...form, full_name: e.target.value })} />
                 <input type="text" placeholder="Enter E-mail" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} />
                 <input type="password" placeholder="Enter Password" value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} />
-                <a className="btn" href=" " onClick={() => handleUserRegistration()}>SIGN UP</a>
+               <button className="btn" onClick={(e) => {handleUserRegistration()}}>SIGN UP</button>
                 <div className="btn-login"><span>Have An Existing Account ! </span><a href="/login"> Log In</a></div>
            </div>
         </div>

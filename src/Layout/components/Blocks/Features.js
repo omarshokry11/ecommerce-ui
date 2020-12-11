@@ -53,8 +53,7 @@ function Features() {
                                             <h6>{item.product.link}</h6>
                                         </div>
                                         <div className="price">
-                                            <h5>{item.product.Price1}</h5>
-                                            <h5>{item.product.Price2}</h5>
+                                            <h5><span>$</span>{item.product.price1}</h5>
                                         </div>
                                         <div className="quantity">
                                             <div className="count">
@@ -71,7 +70,7 @@ function Features() {
                                             </div>
                                         </div>
                                         <div className="total">
-                                            <h5>{parseFloat(item.product.Price1) * parseFloat(item.quantity)}</h5>
+                                            <h5><span>$</span>{parseFloat(item.product.price1) * parseFloat(item.quantity)}</h5>
                                         </div>
                                     </div>
                                 </>

@@ -117,7 +117,7 @@ export default () => {
                             <div className="paragraph">
                                 <p>Showing 1–12 of 16 results</p>
                             </div>
-                        </div>
+                       </div>
                         <div className="products">
                             {
                                 items.map(item => {

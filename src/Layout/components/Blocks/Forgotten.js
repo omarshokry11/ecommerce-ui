@@ -38,9 +38,9 @@ export default (props) => {
            <div className="main-login">
                 <h1 className="title">RESET</h1>
                 <input type="text" placeholder="Enter E-mail" onChange={(e) => setEmail(e.target.value)} />
-                <a className="btn" href=" " onClick={(e) => reset(e)}>RESET</a>
+                <button className="btn" onClick={(e) => reset(e)}>RESET</button>
                 <div className="btn-login"><span>Remember Password ! </span><Link to="/login"> Login</Link></div>
-                <span>Don't Have E-mail! <Link to="/create">Create One</Link></span>
+                <span>Don't Have E-mail! <Link to="/create">Create Email</Link></span>
            </div>
         </div>
     );

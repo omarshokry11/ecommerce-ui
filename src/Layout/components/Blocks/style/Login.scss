@@ -3,12 +3,13 @@
 
 .login{
     position: relative;
-
     .alert-danger{
         position: absolute;
         left: 36.5%;
-        top: 443px;
-        padding: 5px;
+        top: 380px;
+        width: 20%;
+        text-align: center;
+        padding: 8px;
         border-radius: 25px;
         z-index: 1000;
     }
@@ -57,7 +58,7 @@
             font-weight: 400;
             color: #FFF;
             position: absolute;
-            bottom: 10px;
+            bottom: 80px;
             left: 50px;
             height: 40px;
             outline: none;
@@ -109,7 +110,7 @@
     }
     @media screen and (max-width: 799px){
         .main-login{
-            left: 20%;            
+            left: 12%;
         }
     }
     @media screen and (max-width: 570px){

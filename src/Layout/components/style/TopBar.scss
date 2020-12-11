@@ -51,7 +51,7 @@
             color: $Color1;
             font-weight: 100;
             position: relative;
-            top: 10px;
+            top: 0;
             button {
                 background: transparent;
                 border: 0;
@@ -72,7 +72,7 @@
             }
             .curreny-dropdown {
                 position: absolute;
-                top: 28px;
+                top: 25px;
                 left: 10px;
                 background-color: #fff;
                 width: 60px;

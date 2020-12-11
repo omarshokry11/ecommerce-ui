@@ -41,7 +41,7 @@ export default (props) => {
                 <input type="password" placeholder="Enter Password" value={password} onChange={(e) => setPassword(e.target.value)} />
                 <button className="btn" type="submit" onClick={(event) => handleSubmit(event)}>LOGIN</button>
                 <div className="forgotten"><a href="/forgotten">Forgotten Password?</a></div>
-                <span>Don't Have E-mail! <a href="/create">Create One</a></span>
+                <span>Don't Have E-mail! <a href="/create">Create Email</a></span>
            </div>
         </div>
     );
