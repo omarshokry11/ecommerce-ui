@@ -50,7 +50,7 @@ export default () => {
                             })
                         }
                     </div>
-                    <div className="col-md-2 col-4">
+                    <div className="col-md-2 col-12">
                         <h4>CATEGORIES</h4>
                         {
                             items.map(item => {
@@ -67,7 +67,7 @@ export default () => {
                             })
                         }
                     </div>
-                    <div className="col-md-2 col-4">
+                    <div className="col-md-2 col-12">
                         <h4>LINKS</h4>
                         {
                             items.map(item => {
@@ -84,7 +84,7 @@ export default () => {
                             })
                         }
                     </div>
-                    <div className="col-md-2 col-4">
+                    <div className="col-md-2 col-12">
                         <h4>HELP</h4>
                         {
                             items.map(item => {

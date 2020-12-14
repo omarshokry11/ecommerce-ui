@@ -28,9 +28,7 @@ export default () => {
                         return(                       
                             <div className="inner-blog col-md-4 col-12" key={item.id}>
                                 <div className="img">
-                                    <a href="/blog">
-                                        <Image src={item.img} />
-                                    </a>
+                                    <Image src={item.img} />
                                 </div>
                                 <a href=" ">{item.linkTitle}</a>
                                 <h6>{item.h6}</h6>
