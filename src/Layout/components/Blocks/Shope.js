@@ -132,9 +132,9 @@ export default () => {
                                                     <a href=" ">{item.link}</a>
                                                     {item.price1 ? <span>{item.price1}</span> : null}
                                                     {/** Desc */}
-                                                    {item.price ? <p className={item.price}>
+                                                    {item.price ? <span className={item.price}>
                                                         {item.price2 ? <span className="desc">{item.price2}</span> : null}
-                                                    </p> : null}
+                                                    </span> : null}
                                                 </div>
                                             </div>
                                         </>

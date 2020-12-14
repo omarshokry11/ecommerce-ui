@@ -45,7 +45,7 @@ $max-width: 100%;
     }
     .main-shope{
         margin-bottom: 50px;
-        margin-left: 25px;
+        padding-left: 25px;
         h4{
             font-size: 18px;
             line-height: 1.5;
@@ -373,10 +373,12 @@ $max-width: 100%;
         }
         .pages{
             padding-top: 50px;
+            position: relative;
+            margin-bottom: 50px;
            p{
                 display: inline-block;
+               left: 10px;
             }
-            margin-bottom: 50px;
             .page-1{
                 overflow: hidden;
                 margin-right: 20px;
@@ -397,7 +399,6 @@ $max-width: 100%;
             }
             .page-2{
                 overflow: hidden;
-                margin-right: 20px;
                 padding: 4px 10px;
                 text-align: center;
                 width: 34px;
