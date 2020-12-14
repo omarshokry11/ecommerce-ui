@@ -81,6 +81,12 @@
                 background: $Color2;
             }
         }
+        @media screen and (max-width: 768px){
+            button{
+                display: block;
+                width: 100%;
+            }
+        }
         .view{
             margin-right: 25px;
             margin-left: 20px;
