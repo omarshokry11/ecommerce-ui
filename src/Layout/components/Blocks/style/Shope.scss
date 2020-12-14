@@ -23,10 +23,10 @@ $max-width: 100%;
                 font-weight: 700;
                 left: 40%;
                 top: 100px;
-                @media (max-width: 768px) {
-                    h3{
-                        left: 20%;
-                    }
+            }
+            @media screen and (max-width: 2000px){
+                h3{
+                    left: 30%;
                 }
             }
             p{
@@ -95,8 +95,8 @@ $max-width: 100%;
                 position: relative;
                 button{
                     position: absolute;
-                    margin-right: 55px;
-                    bottom: 5px;
+                    top: 5px;
+                    left: 20px;
                     border: none;
                     background-color: #000;
                     border-radius: 25px;
@@ -111,7 +111,7 @@ $max-width: 100%;
                 span{
                     display: inline-block;
                     position: absolute;
-                    right: 10px;
+                    right: 20px;
                     font-size: 15px;
                     line-height: 1.5;
                     color: #888888;
@@ -186,7 +186,7 @@ $max-width: 100%;
                 }
                 @media screen and (max-width: 768px){
                     input{
-                        width: 55%;
+                        width: 50%;
                     }
                     button{
                         font-size: 20px;
