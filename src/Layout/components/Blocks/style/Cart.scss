@@ -69,6 +69,7 @@
     }
     .button{
         button{
+            display: inline-block;
             background: #000;
             color: #FFF;
             border-radius: 25px;
@@ -111,7 +112,7 @@
 @media screen and (max-width: 770px){
     .cart{
         top: 8%;
-        right: 20px;
+        right: 5px;
         width: 67%;
         height: 55%;
     }

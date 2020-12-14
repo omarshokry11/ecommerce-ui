@@ -9,6 +9,11 @@
     {
        margin-left: 50px;
     }
+    @media screen and (max-width: 768px){
+        .logo{
+            margin-left: 10px;
+        }
+    }
 
     .link
     {
@@ -17,7 +22,7 @@
         padding: 10px;
         font-size: 16px;
     }
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 768px){
         .link{
             padding: 8px 0;
             margin-left: 10px;
@@ -68,7 +73,6 @@
     .sale
     {
         color: $Color2;
-        margin: 0;
         &:hover
         {
             color: $Color2;
