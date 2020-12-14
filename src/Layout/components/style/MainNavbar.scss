@@ -33,6 +33,7 @@
     .home
     {
         position: relative;
+        top: 8px;
         transition: all .6s;
         ul
         {
@@ -68,6 +69,11 @@
             opacity: 1;
             visibility: visible;
             transform: scale(1);
+        }
+    }
+    @media screen and (max-width: 1000px){
+        .home{
+           top: 0;
         }
     }
 

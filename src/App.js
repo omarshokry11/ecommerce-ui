@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TopBar from './Layout/components/TopBar.js'
 import MainNav from './Layout/components/MainNav.js';
 import Home from './Layout/components/Blocks/Home.js'
-import Shope from './Layout/components/Blocks/Shope.js';
+import Shop from './Layout/components/Blocks/Shope.js';
 import Features from './Layout/components/Blocks/Features.js';
 import About from './Layout/components/Blocks/About.js';
 import Contact from './Layout/components/Blocks/Contact.js';
@@ -26,7 +26,7 @@ export default () => {
       <MainNav /></> : null}
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/shope" exact component={Shope} />
+        <Route path="/shop" exact component={Shop} />
         <Route path="/features" exact  component={Features} />
         <Route path="/about" exact  component={About} />
         <Route path="/contact" exact  component={Contact} />

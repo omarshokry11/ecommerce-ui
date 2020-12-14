@@ -84,7 +84,12 @@
         @media screen and (max-width: 768px){
             button{
                 display: block;
-                width: 100%;
+                width: 80%;
+                margin: 0 auto;
+            }
+            .view{
+                margin-right: 0;
+                margin-left: 0;
             }
         }
         .view{

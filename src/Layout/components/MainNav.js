@@ -38,8 +38,8 @@ const MainNav = () => {
                                 <li><Link to="/" className="nav-link">HomePage V3</Link></li>
                             </ul>
                         </div>
-                        <Link to="/shope" className="link">Shope</Link>
-                        <Link to="/shope" className="sale link">Sale</Link>
+                        <Link to="/shop" className="link">Shop</Link>
+                        <Link to="/shop" className="sale link">Sale</Link>
                         <Link to="/features" className="link">Features</Link>
                         <Link to="/about" className="link">About</Link>
                         <Link to="/contact" className="link">Contact</Link>

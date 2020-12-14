@@ -35,7 +35,7 @@ export default () => {
 
     return(
         <>
-        <div className="shope">
+        <div className="shop">
             <div className="cover">
                 <div className="text">
                     <h3>WOMEN</h3>
