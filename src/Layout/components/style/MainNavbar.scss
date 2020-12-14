@@ -2,11 +2,6 @@
 
 /*Main-Navbar*/
 
-.navbar-light .navbar-toggler{
-    position: relative;
-    top: 0;
-}
-
 .nav
 {
     height: 80px;
@@ -22,11 +17,16 @@
         padding: 10px;
         font-size: 16px;
     }
+    @media screen and (max-width: 1000px){
+        .link{
+            padding: 8px 0;
+            margin-left: 10px;
+        }
+    }
 
     .home
     {
         position: relative;
-        top: 8px;
         transition: all .6s;
         ul
         {

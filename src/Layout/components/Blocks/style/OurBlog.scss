@@ -2,11 +2,10 @@
 
 
 
-.blog{margin-bottom: 100px;}
+.blog{padding: 100px 0;}
 
 .title{
-    margin-bottom: 50px;
-    
+    margin-bottom: 40px;
     h3{
         font-size: 30px;
         line-height: 1.2;
@@ -35,14 +34,12 @@
     }
 
     a{
-        color: $Color4;
         transition: all .6s;
         font-size: 16px;
         line-height: 1.5;
         margin-bottom: 20px;
         font-weight: 650;
         color: $Color1;
-
         &:hover{
             color: $Color2;
             text-decoration: none;
