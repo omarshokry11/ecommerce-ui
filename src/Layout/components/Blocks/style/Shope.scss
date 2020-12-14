@@ -25,7 +25,7 @@ $max-width: 100%;
                 top: 100px;
                 @media (max-width: 768px) {
                     h3{
-                        left: 30%;
+                        left: 20%;
                     }
                 }
             }
@@ -186,11 +186,11 @@ $max-width: 100%;
                 }
                 @media screen and (max-width: 768px){
                     input{
-                        width: 65%;
+                        width: 55%;
                     }
                     button{
                         font-size: 20px;
-                        top: 10px;
+                        top: 7px;
                     }
                 }
             }
@@ -385,52 +385,6 @@ $max-width: 100%;
                             bottom: -4px;
                         }
                     }
-                }
-            }
-        }
-        .pages{
-            padding-top: 50px;
-            position: relative;
-            margin-bottom: 50px;
-           p{
-                display: inline-block;
-               left: 10px;
-            }
-            .page-1{
-                overflow: hidden;
-                margin-right: 20px;
-                padding: 4px 11px;
-                text-align: center;
-                width: 35px;
-                height: 35px;
-                border-radius: 50%;
-                border: 1px solid #000;
-                background-color: #000;
-                color: #FFF;
-                font-size: 1rem;
-                font-weight: 200;
-                line-height: 1.5;
-                &:hover{
-                    cursor: pointer;
-                }
-            }
-            .page-2{
-                overflow: hidden;
-                padding: 4px 10px;
-                text-align: center;
-                width: 34px;
-                height: 34px;
-                border-radius: 50%;
-                border: 1px solid #DDD;
-                font-size: 1rem;
-                font-weight: 200;
-                line-height: 1.5;
-
-                &:hover{
-                    cursor: pointer;
-                    background-color: #000;
-                    border: 1px solid #000;
-                    color: #FFF;
                 }
             }
         }

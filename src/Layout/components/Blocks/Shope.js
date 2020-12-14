@@ -143,12 +143,6 @@ export default () => {
                                 })
                             }
                         </div>
-                        <div className="pages">
-                            <p>
-                                <span className="page-1">1</span>
-                                <span className="page-2">2</span>
-                            </p>
-                        </div>
                    </div>
                </div>
            </div>
