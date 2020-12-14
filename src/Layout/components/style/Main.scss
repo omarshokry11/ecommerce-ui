@@ -1,6 +1,17 @@
+@import "../../variables.scss";
+
 *
 {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    list-style: none;
+}
+
+button {
+    position: relative;
+    background: transparent;
+    border: 0;
+    outline: none !important;
+    font-weight: 100;
 }

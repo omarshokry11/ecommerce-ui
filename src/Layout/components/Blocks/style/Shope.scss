@@ -1,0 +1,419 @@
+@import "../../../variables.scss";
+$max-width: 100%;
+
+.padding{
+    padding: 50px 0 70px 0;
+}
+
+.shope{
+    .cover{
+        background-image: url("./img/heading-pages-02.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 280px;
+        color: #FFF;
+        margin-bottom: 30px;
+        .text{
+            position: relative;
+            h3{
+                position: absolute;
+                font-size: 50px;
+                line-height: 1.2;
+                font-weight: 700;
+                left: 40%;
+                top: 100px;
+            }
+            @media (max-width: 768px) {
+                h3{
+                    left: 35%;
+                }
+            }
+            p{
+                position: absolute;
+                font-size: 20px;
+                line-height: 1.8;
+                left: 38%;
+                top: 160px;
+            }
+            @media (max-width: 768px) {
+                p{
+                    left: 25%;
+                }
+            }
+        }
+    }
+    .main-shope{
+        margin-bottom: 50px;
+        h4{
+            font-size: 18px;
+            line-height: 1.5;
+            color: #333333;
+            font-weight: 800;
+        }
+        ul{
+            margin-bottom: 40px;
+            li{
+                list-style: none;
+                font-size: 15px;
+                line-height: 1.8;
+                font-weight: 200;
+                color: #888888;
+                cursor: pointer;
+                transition: all .6s;
+                &:hover{
+                    color: #e65540;
+                }
+            }
+        }
+        .p-b-32{
+            font-size: 18px;
+            line-height: 1.5;
+            color: #333333;
+            font-weight: 800;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #DDD;
+        }
+        .price{
+            padding-top: 15px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #DDD;
+            p{
+                font-size: 18px;
+                line-height: 1.5;
+                color: #555555;
+            }
+            .w-size11{
+                margin-top: 20px;
+                position: relative;
+                button{
+                    position: absolute;
+                    margin-right: 55px;
+                    top: 10px;
+                    border: none;
+                    background-color: #000;
+                    border-radius: 25px;
+                    color: #FFF;
+                    height: 30px;
+                    width: 75px;
+                    transition: all .6s;
+                    &:hover{
+                        background-color: #e65540;
+                    }
+                }
+                span{
+                    position: absolute;
+                    right: 0;
+                    font-size: 15px;
+                    line-height: 1.5;
+                    color: #888888;
+                    font-weight: 400;
+                }
+            }
+        }
+        .color{
+            padding-top: 15px;
+            p{
+                font-size: 18px;
+                line-height: 1.5;
+                color: #555555;
+            }
+            ul{
+                padding-bottom: 30px;
+                li{
+                    float: left;
+                    margin-right: 10px;
+                    height: 25px;
+                    width: 25px;
+                    border-radius: 50%;
+                    &:focus{
+                        border: 2px solid #000;
+                    }
+                }
+                .filter1{
+                    background-color: #00bbec;
+                }
+                .filter2{
+                    background-color: #2c6ed5;
+                }
+                .filter3{
+                    background-color: #ffa037;
+                }
+                .filter4{
+                    background-color: #ff5337;
+                }
+                .filter5{
+                    background-color: #a88c77;
+                }
+                .filter6{
+                    background-color: #393939;
+                }
+                .filter7{
+                    background-color: #cccccc;
+                }
+            }
+            .search-product{
+                position: relative;
+                border: 1px solid #DDD;
+                height: 60px;
+                input{
+                    border: none;
+                    padding: 15px;
+                    color: #555555;
+                    font-size: 13px;
+                    line-height: 1.8;
+                    width: 85%;
+                    outline: none;
+                }
+                button{
+                    border: none;
+                    background: none;
+                    font-size: 12px;
+                    position: absolute;
+                    top: 30px;
+                    right: 10px;
+                    padding: 10px;
+                    width: 15%;
+                }
+            }
+        }
+    }
+    .inner-shope{
+        .select{
+            margin-bottom: 20px;
+            div{
+                display: inline-flex;
+            }
+            .value{
+                width: 25%;
+                select{
+                    cursor: pointer;
+                    width: 95%;
+                    padding: 8px 10px;
+                    border: 1px solid #DDD;
+                    color: #888888;
+                    font-size: 15px;
+                    outline: none;
+                }
+            }
+            @media (max-width: 768px){
+                .value{
+                    width: 45%;
+                    margin-bottom: 10px;
+                }
+            }
+            .price{
+                width: 25%;
+                select{
+                    cursor: pointer;
+                    width: 95%;
+                    padding: 8px 10px;
+                    border: 1px solid #DDD;
+                    color: #888888;
+                    font-size: 15px;
+                    outline: none;
+                }
+            }
+            @media (max-width: 768px){
+                .price{
+                    width: 45%;
+                }
+            }
+            .paragraph{
+                width: 47%;
+                direction: rtl;
+                color: #888888;
+                font-size: 14px;
+            }
+            @media (max-width: 768px){
+                .paragraph{
+                    width: 100%;
+                    direction: ltr;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .products{
+            div{
+                display: inline-flex;
+                margin: 1%;
+            }
+            @media (max-width: 768px){
+                div{
+                    display: block;
+                }
+            }
+            .product{
+                width: 30%;
+                position: relative;
+                margin-bottom: 100px;
+                .img{
+                    position: relative;
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                    span{
+                        position: absolute;
+                        top: 15px;
+                        left: 10px;
+                        z-index: 10000;
+                        color: #FFF;
+                        font-size: 16px;
+                        background-color: #66a8a6;
+                        border-radius: 25px;
+                        display: block;
+                        width: 60px;
+                        text-align: center;
+                    }
+                    span.sale{
+                        background-color: $Color2;
+                    }
+                    .layout{
+                        opacity: 0;
+                        visibility: hidden;
+                        position: absolute;
+                        left: -2px;
+                        right: -2px;
+                        top: -2px;
+                        bottom: -2px;
+                        background-color: rgba(0, 0, 0, 0.288);
+                        z-index: 10;
+                        transition: all .6s;
+                        button{
+                            position: absolute;
+                            top: 82%;
+                            left: 15%;
+                            color: #FFF;
+                            background-color: #000;
+                            width: 70%;
+                            height: 40px;
+                            font-size: 16px;
+                            font-weight: 400;
+                            border-radius: 25px;
+                            transition: all .6s;
+                            &:hover{
+                                background-color: $Color2;
+                            }
+                        }
+                        .icon{
+                            position: absolute;
+                            right: 10px;
+                            top: 15px;
+                            overflow: hidden;
+                            .fas{
+                                display: none;
+                            }
+                            i{
+                                color: #FFF;
+                                font-size: 22px;
+                                cursor: pointer;
+                            }
+                            &:hover .fas{
+                                display: block;
+                            }
+                            &:hover .far{
+                                display: none;
+                            }
+                        }
+                    }
+                    &:hover .layout{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+                .details{
+                    position: absolute;
+                    top: 100%;
+                    margin: 20px 10px;
+                    display: block;
+                    a{
+                        display: block;
+                        width: 100%;
+                        line-height: 1.5;
+                        color: #555555be;
+                        text-decoration: none;
+                        transition: all .6s;
+                        &:hover{
+                            color: $Color2;
+                        }
+                    }
+                    p{
+                        font-size: 17px;
+                        color: #555555cc;
+                        line-height: 1.5;
+                        font-weight: 350;
+                        color: #000;
+                        span{
+                            margin-right: 5px;
+                            color: #000;
+                        }
+                        .desc{
+                            text-decoration: line-through;
+                            margin-left: 8px;
+                            color: $Color2;
+                        }
+                    }
+                }
+            }
+            @media (max-width: 768px){
+                .product{
+                    width: 100%;
+                    .img{
+                        .layout{
+                            left: -4px;
+                            right: -4px;
+                            top: -4px;
+                            bottom: -4px;
+                        }
+                    }
+                }
+            }
+        }
+        .pages{
+            padding-top: 50px;
+           p{
+                display: inline-block;
+            }
+            margin-bottom: 50px;
+            .page-1{
+                overflow: hidden;
+                margin-right: 20px;
+                padding: 4px 11px;
+                text-align: center;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                border: 1px solid #000;
+                background-color: #000;
+                color: #FFF;
+                font-size: 1rem;
+                font-weight: 200;
+                line-height: 1.5;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .page-2{
+                overflow: hidden;
+                margin-right: 20px;
+                padding: 4px 10px;
+                text-align: center;
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+                border: 1px solid #DDD;
+                font-size: 1rem;
+                font-weight: 200;
+                line-height: 1.5;
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: #000;
+                    border: 1px solid #000;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+@import "../../variables.scss";
+/*Top-Bar*/
+
+.top-bar
+{
+    height: 45px;
+    padding: 10px;
+    background-color: $Color3;
+    z-index: 10;
+    .social
+    {
+        a
+        {
+            font-size: 17px;
+            color: $Color1;
+            margin: 0 10px;
+
+            &:hover{
+                color: $Color2;
+            }
+        }
+    }
+    h6
+    {
+        color: $Color1;
+        font-size: 14px;
+        line-height: 1.7;
+        font-weight: 100;
+    }
+    .top-bar-controles
+    {
+        .block {
+            display: block;
+        }
+
+        .none {
+            display: none;
+        }
+        display: inline-flex;
+        position: absolute;
+        right: 0%;
+        justify-content: flex-end;
+        align-items: center;
+        .curreny-container
+        {
+            z-index: 10;
+            margin-left: 50px;
+            margin-right: 50px;
+            cursor: pointer;
+            width: 10%;
+            color: $Color1;
+            font-weight: 100;
+            position: relative;
+            top: 0;
+            button {
+                background: transparent;
+                border: 0;
+                outline: none;
+                color: #888888;
+                font-weight: 100;
+            }
+            .current-currency {
+                width: 60px;
+                position: relative;
+                .fas{
+                    font-size: 14px;
+                    position: absolute;
+                    top: 8px;
+                    left: 50px;
+                    transition: all .4s;
+                }
+            }
+            .curreny-dropdown {
+                position: absolute;
+                top: 25px;
+                left: 10px;
+                background-color: #fff;
+                width: 60px;
+                z-index: 10;
+                button {
+                    background-color: $Color2;
+                    color: #fff;
+                    padding: 0;
+                    margin: 0;
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

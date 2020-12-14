@@ -1,0 +1,140 @@
+@import "../../../variables.scss";
+
+
+.login{
+    position: relative;
+    .alert-danger{
+        position: absolute;
+        left: 36.5%;
+        top: 380px;
+        width: 20%;
+        text-align: center;
+        padding: 8px;
+        border-radius: 25px;
+        z-index: 1000;
+    }
+    .main-login{
+        height: 350px;
+        position: absolute;
+        left: 33%;
+        top: 190px;
+        padding: 20px 15px;
+        border: 2px solid $Color2;
+        border-radius: 20px;
+        text-align: center;
+        width: 28%;
+        .title{
+            color: $Color2;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+        input{
+            display: block;
+            width: 80%;
+            margin: auto;
+            border-radius: 25px;
+            margin-bottom: 25px;
+            border: 1px solid #ddd;
+            transition: all .4s;
+            font-size: 14px;
+            letter-spacing: 1px;
+            outline: none;
+            padding: 10px 20px;
+            &:focus{
+                border: 1px solid $Color2;
+            }
+        }
+    
+        button.btn{
+            background-color: $Color2;
+            padding: 8px;
+            display: block;
+            width: 75%;
+            margin: auto;
+            border-radius: 25px;
+            font-size: 16px;
+            border: 1px solid $Color2;
+            font-weight: 400;
+            color: #FFF;
+            position: absolute;
+            bottom: 80px;
+            left: 50px;
+            height: 40px;
+            outline: none;
+            &:hover{
+                color: #FFF;
+            }
+        }
+        a{
+            color: $Color2;
+            text-decoration: none;
+            &:hover{
+                text-decoration: none;
+                color: $Color2;
+            }
+        }
+    
+        .forgotten{
+            position: absolute;
+            bottom: 40px;
+            width: 100%;
+            a{
+                text-align: center;
+                text-decoration: none;
+                color: #000;
+                transition: all .6s;
+                &:hover{
+                    text-decoration: none;
+                    color: $Color2;
+                }
+            }
+        }
+
+        span{
+            position: absolute;
+            bottom: 15px;
+            display: block;
+            width: 100%;
+            a{
+                text-align: center;
+            }
+        }
+    }
+    @media screen and (max-width: 900px){
+        .main-login{
+            width: 80%;
+            left: 10%;
+            top: 100px;
+        }
+    }
+    @media screen and (max-width: 799px){
+        .main-login{
+            left: 12%;
+        }
+    }
+    @media screen and (max-width: 570px){
+        .main-login{
+            width: 100%;
+            left: 10%;
+            .btn{
+                width: 72%;
+            }
+        }
+    }
+    @media screen and (max-width: 401px){
+        .main-login{
+            width: 100%;
+            left: 10%;
+            .btn{
+                width: 20%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .login{
+        width: 80%;
+    }
+}

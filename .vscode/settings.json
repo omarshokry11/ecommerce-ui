@@ -1,0 +1,7 @@
+{
+    "javascript.suggest.completeFunctionCalls": true,
+    "typescript.suggest.completeFunctionCalls": true,
+    "search.quickOpen.includeSymbols": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "editor.suggest.shareSuggestSelections": true
+}
