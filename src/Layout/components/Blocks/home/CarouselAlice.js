@@ -4,8 +4,6 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import Container from "react-bootstrap/Container";
 import firebase from "../../../../Firebase/config.js";
 
-import "../../Blocks/FavoriteProduct";
-
 import "../style/CarouselAlice.scss";
 
 export default () => {
