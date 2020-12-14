@@ -183,11 +183,18 @@ $max-width: 100%;
                     padding: 10px;
                     width: 15%;
                 }
+                @media screen and (max-width: 768px){
+                    button{
+                        font: 20px;
+                        top: 10px;
+                    }
+                }
             }
         }
     }
     .inner-shope{
         .select{
+            padding-left: 20px;
             margin-bottom: 20px;
             div{
                 display: inline-flex;
@@ -346,9 +353,8 @@ $max-width: 100%;
                             color: $Color2;
                         }
                     }
-                    p{
+                    span{
                         font-size: 17px;
-                        color: #555555cc;
                         line-height: 1.5;
                         font-weight: 350;
                         color: #000;
