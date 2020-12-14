@@ -58,11 +58,12 @@ export default () => {
                        <div className="price">
                            <p>Price</p>
                             <Slider
-                            value={value}
-                            onChange={handleChange}
-                            valueLabelDisplay="auto"
-                            aria-labelledby="range-slider"
-                            getAriaValueText={valuetext}
+                                className="slide"
+                                value={value}
+                                onChange={handleChange}
+                                valueLabelDisplay="auto"
+                                aria-labelledby="range-slider"
+                                getAriaValueText={valuetext}
                             />
                            <div className="w-size11">
                                <button>FILTER</button>
