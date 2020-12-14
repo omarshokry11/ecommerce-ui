@@ -1,18 +1,10 @@
-import React, { useEffect, useState, database } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Image } from "react-bootstrap";
 import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
-import { makeStyles } from '@material-ui/core/styles';
 import Slider from '@material-ui/core/Slider';
 import firebase from "../../../Firebase/config.js";
 
 import "./style/Shope.scss";
-
-
-const useStyles = makeStyles({
-    root: {
-      width: 200,
-    },
-});
   
 function valuetext(value) {
     return `${value}V`;
@@ -138,11 +130,10 @@ export default () => {
                                                 </div>
                                                 <div className="details">
                                                     <a href=" ">{item.link}</a>
-                                                    {item.Price1 ? <p>{item.Price1}</p> : null}
+                                                    {item.price1 ? <span>{item.price1}</span> : null}
                                                     {/** Desc */}
                                                     {item.price ? <p className={item.price}>
-                                                        <span>{item.price1}</span>
-                                                        <span  className="desc">{item.price2}</span>
+                                                        {item.price2 ? <span className="desc">{item.price2}</span> : null}
                                                     </p> : null}
                                                 </div>
                                             </div>

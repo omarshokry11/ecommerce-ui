@@ -40,7 +40,6 @@ const MainNav = () => {
                         </div>
                         <Link to="/shope" className="link">Shope</Link>
                         <Link to="/shope" className="sale link">Sale</Link>
-                        <Link to="/blog" className="link">Blog</Link>
                         <Link to="/features" className="link">Features</Link>
                         <Link to="/about" className="link">About</Link>
                         <Link to="/contact" className="link">Contact</Link>

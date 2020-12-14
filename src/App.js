@@ -4,7 +4,6 @@ import MainNav from './Layout/components/MainNav.js';
 import Home from './Layout/components/Blocks/Home.js'
 import Shope from './Layout/components/Blocks/Shope.js';
 import Features from './Layout/components/Blocks/Features.js';
-import Blog from './Layout/components/Blocks/Blog.js';
 import About from './Layout/components/Blocks/About.js';
 import Contact from './Layout/components/Blocks/Contact.js';
 import Login from './Layout/components/Blocks/Login.js';
@@ -29,7 +28,6 @@ export default () => {
         <Route path="/" exact component={Home} />
         <Route path="/shope" exact component={Shope} />
         <Route path="/features" exact  component={Features} />
-        <Route path="/blog" exact component={Blog} />
         <Route path="/about" exact  component={About} />
         <Route path="/contact" exact  component={Contact} />
         <Route path="/login" exact  component={(props) => <Login {...props} handleUserPlace={(e) => handleUserPlace(e)} />} />

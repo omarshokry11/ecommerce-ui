@@ -51,7 +51,7 @@ export default () => {
     useEffect(() => {
         startTimer();
         return () => {
-            clearInterval(interval.current);
+            clearInterval('interval.current');
         };
     });
 
@@ -65,7 +65,7 @@ export default () => {
                                     <div className="col-md-6 col-12 main-offers" key={item.id}>
                                        <div className="img">
                                             <Image src={item.img} />
-                                        </div>
+                                       </div>
                                         {item.linkName1 && <div className="inner-1-offers">
                                             <p>{item.p}</p>
                                             <h3>{item.h3}</h3>

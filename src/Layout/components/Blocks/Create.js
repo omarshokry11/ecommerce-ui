@@ -6,14 +6,13 @@ import "./style/Create.scss";
 
 export default (props) => {
     const [form, setForm] = useState({});
-    const [error, setError] = useState("");
+    const [setError] = useState("");
 
     const errs = {
         "Password should be at least 6 characters": "Password should be at least 6 characters.",
         "The email address is already in use by another account.": "The email address is already in use.",
         "The email address is badly formatted.": "Please enter a valid email."
     };
-    const canContinue = form.full_name;
 
     setForm({
         full_name: "",
@@ -45,7 +44,7 @@ export default (props) => {
         });
     };
     
-    useEffect(() => {
+    useEffect((props) => {
         props.handleUserPlace(true);
     }, [])
 

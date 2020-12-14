@@ -14,10 +14,6 @@ export default (props) => {
         "The email address is badly formatted.": "Please enter a valid email", 
         "The password is invalid or the user does not have a password.": "Invalid Password"}
 
-    function validateForm() {
-        return email.length > 0 && password.length > 0;
-    }
-
     function handleSubmit(event) {
         event.preventDefault();
         firebase.auth().signInWithEmailAndPassword(email, password).then((user) => {
@@ -28,7 +24,7 @@ export default (props) => {
         });
     }
     
-    useEffect(() => {
+    useEffect((props) => {
         props.handleUserPlace(true);
     }, [])
 

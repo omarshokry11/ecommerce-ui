@@ -26,7 +26,7 @@ export default (props) => {
             });
     }
     
-    useEffect(() => {
+    useEffect((props) => {
         props.handleUserPlace(true);
     }, [])
 
