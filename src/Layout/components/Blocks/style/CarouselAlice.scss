@@ -175,3 +175,9 @@
 .alice-carousel__next-btn [data-area]::after {
   content: ">";
 }
+
+@media screen and (max-width: 768px){
+  .alice-carousel__prev-btn [data-area]::after, .alice-carousel__next-btn [data-area]::after {
+    display: none;
+  }
+}
