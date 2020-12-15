@@ -16,7 +16,7 @@ export default () => {
       });
       setItems(banner);
     }).catch((err) => console.log(err));
-  }, [items]);
+  }, []);
 
   return (
     <div className="cat-grid mr-auto ml-auto">

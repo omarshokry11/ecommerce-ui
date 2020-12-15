@@ -305,16 +305,18 @@
                             line-height: 1.8;
                         }
                     }
-                    @media (max-width:801px) {
+                    @media (max-width: 768px) {
                         select{
                             width: 50%;
                         }
                         input{
                             display: block;
                             width: 50%;
+                            margin-bottom: 20px;
                         }
                         a{
                             margin: 15px 0;
+                            width: 200px;
                         }
                     }
                 }
