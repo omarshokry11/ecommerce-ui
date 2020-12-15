@@ -28,7 +28,7 @@ export default () => {
                                 <Image src={item.img} />
                                 <div className={"details"}>
                                     <span className="heart">
-                                        <i className={item.icon}></i>
+                                        <i className={item.icon}> </i>
                                         {item.number}
                                     </span>
                                     <p>

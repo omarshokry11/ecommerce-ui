@@ -13,7 +13,7 @@ export default () => {
             background: `url(${"/carousel/master-slide-02.jpg"}) center / auto 100% no-repeat`,
           }}
           className="carousel-img"
-        ></div>
+        > </div>
         <div className="caption">
           <div className="caption-content">
             <h4 className="collection" id="collection-1">
@@ -34,7 +34,7 @@ export default () => {
             background: `url(${"/carousel/master-slide-03.jpg"}) center / auto 100% no-repeat`,
           }}
           className="carousel-img"
-        ></div>
+        > </div>
         <div className="caption">
           <div className="caption-content">
             <h4 className="collection" id="collection-2">
@@ -55,7 +55,7 @@ export default () => {
             background: `url(${"/carousel/master-slide-04.jpg"}) center / auto 100% no-repeat`,
           }}
           className="carousel-img"
-        ></div>
+        > </div>
         <div className="caption">
           <div className="caption-content">
             <div>

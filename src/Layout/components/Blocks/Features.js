@@ -121,7 +121,7 @@ function Features() {
                         </div>
                     </div>
                 </div>
-                <div className="clear"></div>
+                <div className="clear"> </div>
             </Container>
         </div>
         </>

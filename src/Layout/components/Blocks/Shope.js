@@ -73,17 +73,17 @@ export default () => {
                        <div className="color">
                            <p>Color</p>
                            <ul>
-                               <li className="filter1"></li>
-                               <li className="filter2"></li>
-                               <li className="filter3"></li>
-                               <li className="filter4"></li>
-                               <li className="filter5"></li>
-                               <li className="filter6"></li>
-                               <li className="filter7"></li>
+                               <li className="filter1"> </li>
+                               <li className="filter2"> </li>
+                               <li className="filter3"> </li>
+                               <li className="filter4"> </li>
+                               <li className="filter5"> </li>
+                               <li className="filter6"> </li>
+                               <li className="filter7"> </li>
                            </ul>
                            <div className="search-product">
                                 <input type="text" placeholder="Search Products..." />
-                                <button><i className="fa fa-search"></i></button>
+                                <button><i className="fa fa-search"> </i></button>
                            </div>
                        </div>
                    </div>
@@ -124,8 +124,8 @@ export default () => {
                                                     <div className="layout">
                                                         <button onClick={() => addToCart(item)}>{item.button}</button>
                                                         {item.icon ? <div className={item.icon}>
-                                                            <i className="far fa-heart"></i>
-                                                            <i className="fas fa-heart"></i>
+                                                            <i className="far fa-heart"> </i>
+                                                            <i className="fas fa-heart"> </i>
                                                         </div> : null}
                                                     </div>
                                                 </div>
