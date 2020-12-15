@@ -19,19 +19,19 @@ const MaintopNav = () => {
                 <div className="row">
                     <div className="col-md-4 col-12 social">
                         <a href=" ">
-                            <i className="fab fa-facebook-f"></i>
+                            <i className="fab fa-facebook-f"> </i>
                         </a>
                         <a href=" ">
-                            <i className="fab fa-instagram"></i>
+                            <i className="fab fa-instagram"> </i>
                         </a>
                         <a href=" ">
-                            <i className="fab fa-pinterest-p"></i>
+                            <i className="fab fa-pinterest-p"> </i>
                         </a>
                         <a href=" ">
-                            <i className="fab fa-snapchat-ghost"></i>
+                            <i className="fab fa-snapchat-ghost"> </i>
                         </a>
                         <a href=" ">
-                            <i className="fab fa-youtube"></i>
+                            <i className="fab fa-youtube"> </i>
                         </a>
                     </div>
 
@@ -43,7 +43,7 @@ const MaintopNav = () => {
                         <h6>fashi@colorlib.com</h6>
                         <div className="curreny-container">
                             <button onClick={() => handleVisibility()} className="current-currency">
-                                {curreny} <i className=" fas fa-chevron-down"></i>
+                                {curreny} <i className=" fas fa-chevron-down"> </i>
                             </button>
                             <div className={`curreny-dropdown ${visible}`}>
                                 <button style={ curreny === "USD" ? {backgroundColor: "#e65540", color: "#FFF"} : {backgroundColor: "transparent", color: "#888888"}} onClick={() => { setCurreny("USD"); setVisible("none") }}>USD</button>
