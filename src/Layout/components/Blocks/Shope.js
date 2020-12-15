@@ -14,12 +14,12 @@ export default () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        firebase.database().ref('shope').once('value').then(response => {
-            let shope = [];
+        firebase.database().ref('shop').once('value').then(response => {
+            let shop = [];
             response.forEach(item => {
-                shope.push(item.val());
+                shop.push(item.val());
             });
-            setItems(shope);
+            setItems(shop);
         }).catch((err) => console.log(err));
     }, [items])
 
@@ -44,7 +44,7 @@ export default () => {
             </div>
            <div className="container padding">
                <div className="row">
-                   <div className="col-md-3 col-12 main-shope">
+                   <div className="col-md-3 col-12 main-shop">
                         <h4>Categories</h4>
                         <ul>
                             <li>All</li>
@@ -87,7 +87,7 @@ export default () => {
                            </div>
                        </div>
                    </div>
-                   <div className="col-md-9 col-12 inner-shope">
+                   <div className="col-md-9 col-12 inner-shop">
                        <div className="select">
                             <div className="value">
                                 <select>
