@@ -18,7 +18,7 @@ export default () => {
     }, [items]);
 
     return (
-        <div className="container blog">
+        <div className="container" style={{ paddingBottom: '50px', paddingTop: '50px' }}>
             <div className="row">
                 <div className="col-12 text-center title">
                     <h3>OUR BLOG</h3>
