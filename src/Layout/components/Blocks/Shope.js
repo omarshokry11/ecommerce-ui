@@ -42,7 +42,7 @@ export default () => {
                     <p>New Arrivals Women Collection 2018</p>
                 </div>
             </div>
-           <div className="container padding">
+           <div className="container" style={{ paddingTop: '50px', paddingBottom: '50px' }}>
                <div className="row">
                    <div className="col-md-3 col-12 main-shop">
                         <h4>Categories</h4>

@@ -1,10 +1,6 @@
 @import "../../../variables.scss";
 $max-width: 100%;
 
-.padding{
-    padding: 50px 0 70px 0;
-}
-
 .shop{
     .cover{
         background-image: url("./img/heading-pages-02.jpg");
@@ -45,7 +41,7 @@ $max-width: 100%;
     }
     .main-shop{
         margin-bottom: 50px;
-        padding-left: 25px;
+        padding-left: 10px;
         h4{
             font-size: 18px;
             line-height: 1.5;
@@ -186,7 +182,6 @@ $max-width: 100%;
     }
     .inner-shop{
         .select{
-            padding-left: 20px;
             margin-bottom: 20px;
             div{
                 display: inline-flex;
